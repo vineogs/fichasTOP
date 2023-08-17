@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"> 
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <title>Fichas TOP</title>
 </head>
-<body>
+<body style="background-color: #BBBBBB;">
     <header>
-        <h1>Fichas TOP</h1>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">A</a></li>
+                    <li><a href="badges.html">S</a></li>
+                    <li><a href="collapsible.html">DA</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
-    
+
+<!-- Testar causa da falha (Não escondendo as tabs, sempre exibindo todas)
+    <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab col s3"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
+        <div id="test1" class="col s12">Test 1</div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+    </div>
+-->
+
     <div class="atributos">
         <p>Atríbutos</p>
-        <div class="dados">
-            <button onclick="rolagem(20, forc, forc_bonus)" class="botoes">FOR</button>
-            <button onclick="rolagem(20, vig, vig_bonus)" class="botoes">VIG</button>
-            <button onclick="rolagem(20, agi, agi_bonus)" class="botoes">AGI</button>
-            <button onclick="rolagem(20, int, int_bonus)" class="botoes" style="margin: 15px 0 0 35px;">INT</button>
-            <button onclick="rolagem(20, pre, pre_bonus)" class="botoes">PRE</button>
+        <div class="dados_atributos">
+            <button onclick="rolagem(20, forc, forc_bonus)" class="botoes_atributos">FOR<br></button>
+            <button onclick="rolagem(20, vig, vig_bonus)" class="botoes_atributos">VIG</button>
+            <button onclick="rolagem(20, agi, agi_bonus)" class="botoes_atributos">AGI</button>
+            <button onclick="rolagem(20, int, int_bonus)" class="botoes_atributos" style="margin: 15px 0 0 35px;">INT</button>
+            <button onclick="rolagem(20, pre, pre_bonus)" class="botoes_atributos">PRE</button>
+        </div>
+    </div>
+
+    <div class="pericias">
+        <p>Perícias</p>
+        <div class="dados_pericias">
+            <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Acrobacia<br></button>
+            <button onclick="rolagem(20, forc, pericia_bonus)" class="botoes_pericias">Luta<br></button>
+            <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Pontaria<br></button>
+            <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias" style="margin-top: 15px;">Medicina<br></button>
+            <button onclick="rolagem(20, vig, pericia_bonus)" class="botoes_pericias">Fortitude<br></button>
+            <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Vontade<br></button>
         </div>
     </div>
 </body>

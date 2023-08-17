@@ -1,10 +1,5 @@
-body {
-    background-color: #BBBBBB;
-}
-
-header {
-    background-color: #888888;
-    height: 70px;
+.nav-wrapper {
+    background-color: #000000;
 }
 
 h1 {
@@ -18,7 +13,7 @@ h1 {
     margin: 15px 0 0 95px;
 }
 
-.dados {
+.dados_atributos {
     background-color: #888888;
     margin: 20px 0 0 20px;
     padding: 20px;
@@ -29,7 +24,23 @@ h1 {
     border-radius: 15%;
 }
 
-.botoes {
+.pericias p {
+    font-size: 30px;
+    margin: 15px 0 0 95px;
+}
+
+.dados_pericias {
+    background-color: #888888;
+    margin: 20px 0 0 20px;
+    padding: 20px;
+    width: 220px;
+    height: 150px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 15%;
+}
+
+.botoes_atributos {
     background-color: #000000;
     color: #ffffff;
     border: none;
@@ -37,4 +48,14 @@ h1 {
     height: 70px;
     width: 70px;
     border-radius: 25px;
+}
+
+.botoes_pericias {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    height: 70px;
+    width: 70px;
+    border-radius: 25px; 
 }

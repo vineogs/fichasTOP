@@ -1,4 +1,6 @@
-/* ZONA DE TESTE */
+// Teste de inicialização (não inicializando) var instance = M.Tabs.init(el, options);
+
+/* ZONA DE TESTE / Atributos brutos (Sem uso de DB)
 function teste(){
     alert("Sistema testado!");
 }
@@ -15,8 +17,11 @@ var agi_bonus = 5;
 var int_bonus = 0;
 var pre_bonus = 0;
 
+var pericia_bonus = 0;
 
-/* ZONA DE TESTE */
+*/
+
+  
 
 function rolagem(lados, quantidade, bonus){
     var rolagens = [];
