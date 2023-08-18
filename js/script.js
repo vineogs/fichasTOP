@@ -1,10 +1,4 @@
-// Teste de inicialização (não inicializando) var instance = M.Tabs.init(el, options);
-
-/* ZONA DE TESTE / Atributos brutos (Sem uso de DB)
-function teste(){
-    alert("Sistema testado!");
-}
-
+/* ZONA DE TESTE / Atributos brutos (Sem uso de DB)*/
 var forc = 3;
 var vig = 2;
 var agi = 1;
@@ -19,9 +13,10 @@ var pre_bonus = 0;
 
 var pericia_bonus = 0;
 
-*/
-
-  
+document.addEventListener('DOMContentLoaded', function() {
+    var el = document.querySelector('.tabs');
+    var instance = M.Tabs.init(el);
+});
 
 function rolagem(lados, quantidade, bonus){
     var rolagens = [];

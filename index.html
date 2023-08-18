@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"> 
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Fichas TOP</title>
 </head>
 <body style="background-color: #BBBBBB;">
@@ -22,45 +21,67 @@
             </div>
         </nav>
     </header>
-
-<!-- Testar causa da falha (Não escondendo as tabs, sempre exibindo todas)
-    <div class="row">
-        <div class="col s12">
-          <ul class="tabs">
-            <li class="tab col s3"><a href="#test1">Test 1</a></li>
-            <li class="tab col s3"><a href="#test2">Test 2</a></li>
-            <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab col s3"><a href="#test4">Test 4</a></li>
-          </ul>
+    <main>
+        <div class="row">
+            <div class="col s12">
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab col s3"><a href="#personagem">Personagem</a></li>
+                <li class="tab col s3"><a href="#atributos">Atríbutos</a></li>
+                <li class="tab col s3"><a href="#pericias">Perícias</a></li>
+                <li class="tab col s3"><a href="#poderes">Poderes</a></li>
+                <li class="tab col s3"><a href="#itens">Itens</a></li>
+            </ul>
+            </div>
+            <div id="personagem" class="col s12">Test 1</div>
+            <div id="atributos" class="col s12">
+                <div class="atributos">
+                    <button onclick="rolagem(20, forc, forc_bonus)" class="botoes_atributos">FOR<br></button>
+                    <button onclick="rolagem(20, vig, vig_bonus)" class="botoes_atributos">VIG</button>
+                    <button onclick="rolagem(20, agi, agi_bonus)" class="botoes_atributos">AGI</button>
+                    <button onclick="rolagem(20, int, int_bonus)" class="botoes_atributos">INT</button>
+                    <button onclick="rolagem(20, pre, pre_bonus)" class="botoes_atributos">PRE</button>
+                </div>
+            </div>
+            <div id="pericias" class="col s12">
+                <div class="pericias_defesa">
+                    <button onclick="rolagem(20, forc, pericia_bonus)" class="botoes_pericias">Aparar<br></button>
+                    <button onclick="rolagem(20, vig, pericia_bonus)" class="botoes_pericias">Fortitude<br></button>
+                    <button onclick="rolagem(20, vig, pericia_bonus)" class="botoes_pericias">Resistência<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Esquiva<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Acrobacia<br></button>
+                </div>
+                <div class="pericias">
+                    <button onclick="rolagem(20, forc, pericia_bonus)" class="botoes_pericias">Atletismo<br></button>
+                    <button onclick="rolagem(20, forc, pericia_bonus)" class="botoes_pericias">Luta<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Acrobacia<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Pontaria<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Furtividade<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Crime<br></button>
+                    <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Veículos<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Artes<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Atualidades<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Ciências<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Especialidade<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Investigação<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Tecnologia<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Medicina<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Magia<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Sobrevivência<br></button>
+                    <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias">Tática<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Adestramento<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Enganação<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Intimidação<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias" style="margin-left: 65px;">Intuição<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Percepção<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Diplomacia<br></button>
+                    <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Religião<br></button>
+                </div>
+            </div>
+            <div id="poderes" class="col s12">Test 4</div>
+            <div id="itens" class="col s12">Test 4</div>
         </div>
-        <div id="test1" class="col s12">Test 1</div>
-        <div id="test2" class="col s12">Test 2</div>
-        <div id="test3" class="col s12">Test 3</div>
-        <div id="test4" class="col s12">Test 4</div>
-    </div>
--->
-
-    <div class="atributos">
-        <p>Atríbutos</p>
-        <div class="dados_atributos">
-            <button onclick="rolagem(20, forc, forc_bonus)" class="botoes_atributos">FOR<br></button>
-            <button onclick="rolagem(20, vig, vig_bonus)" class="botoes_atributos">VIG</button>
-            <button onclick="rolagem(20, agi, agi_bonus)" class="botoes_atributos">AGI</button>
-            <button onclick="rolagem(20, int, int_bonus)" class="botoes_atributos" style="margin: 15px 0 0 35px;">INT</button>
-            <button onclick="rolagem(20, pre, pre_bonus)" class="botoes_atributos">PRE</button>
-        </div>
-    </div>
-
-    <div class="pericias">
-        <p>Perícias</p>
-        <div class="dados_pericias">
-            <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Acrobacia<br></button>
-            <button onclick="rolagem(20, forc, pericia_bonus)" class="botoes_pericias">Luta<br></button>
-            <button onclick="rolagem(20, agi, pericia_bonus)" class="botoes_pericias">Pontaria<br></button>
-            <button onclick="rolagem(20, int, pericia_bonus)" class="botoes_pericias" style="margin-top: 15px;">Medicina<br></button>
-            <button onclick="rolagem(20, vig, pericia_bonus)" class="botoes_pericias">Fortitude<br></button>
-            <button onclick="rolagem(20, pre, pericia_bonus)" class="botoes_pericias">Vontade<br></button>
-        </div>
-    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </main>
 </body>
 </html>

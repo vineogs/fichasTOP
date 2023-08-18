@@ -1,0 +1,29 @@
+.nav-wrapper {
+    background-color: #000000;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.atributos,.pericias,.pericias_defesa{
+    margin: 20px auto;
+    width: 800px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #EEEEEE;
+    padding: 20px 0 0 5px;
+}
+
+.botoes_atributos, .botoes_pericias {
+    margin-top: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    height: 70px;
+    width: 150px;
+    border-radius: 15px;
+}
